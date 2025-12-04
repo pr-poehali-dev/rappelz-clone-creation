@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500;700&family=MedievalSharp&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 280 100% 95%;
+    --background: 0 0% 0%;
+    --foreground: 45 100% 95%;
 
-    --card: 240 10% 15%;
-    --card-foreground: 280 100% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 45 100% 95%;
 
-    --popover: 240 10% 15%;
-    --popover-foreground: 280 100% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 45 100% 95%;
 
-    --primary: 263 70% 70%;
-    --primary-foreground: 280 100% 10%;
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 271 91% 65%;
-    --secondary-foreground: 280 100% 10%;
+    --secondary: 30 100% 40%;
+    --secondary-foreground: 45 100% 95%;
 
-    --muted: 240 10% 20%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 45 20% 65%;
 
-    --accent: 24 95% 53%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 10% 25%;
-    --input: 240 10% 20%;
-    --ring: 263 70% 70%;
+    --border: 45 50% 30%;
+    --input: 0 0% 10%;
+    --ring: 45 100% 50%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 222 47% 8%;
-    --sidebar-foreground: 280 100% 95%;
-    --sidebar-primary: 263 70% 70%;
-    --sidebar-primary-foreground: 280 100% 10%;
-    --sidebar-accent: 240 10% 15%;
-    --sidebar-accent-foreground: 280 100% 95%;
-    --sidebar-border: 240 10% 20%;
-    --sidebar-ring: 263 70% 70%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 45 100% 95%;
+    --sidebar-primary: 45 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 45 100% 95%;
+    --sidebar-border: 45 50% 20%;
+    --sidebar-ring: 45 100% 50%;
   }
 }
 
@@ -71,19 +71,24 @@
 @layer utilities {
   .glow-text {
     text-shadow:
-      0 0 10px rgba(155, 135, 245, 0.8),
-      0 0 20px rgba(155, 135, 245, 0.5);
+      0 0 10px rgba(255, 215, 0, 0.8),
+      0 0 20px rgba(255, 215, 0, 0.5),
+      2px 2px 4px rgba(0, 0, 0, 0.8);
   }
 
   .glow-border {
-    box-shadow: 0 0 20px rgba(155, 135, 245, 0.4);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
   }
 
   .gradient-magic {
     background: linear-gradient(
       135deg,
-      rgba(155, 135, 245, 0.2) 0%,
-      rgba(249, 115, 22, 0.2) 100%
+      rgba(255, 215, 0, 0.1) 0%,
+      rgba(139, 69, 19, 0.2) 100%
     );
+  }
+
+  .text-shadow-dark {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   }
 }
